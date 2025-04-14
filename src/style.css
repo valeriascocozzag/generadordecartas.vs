@@ -1,5 +1,65 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: white;
-}
+body {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Georgia', serif;
+  }
+  .card {
+    width: 250px;
+    height: 350px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+  }
+  .corner {
+    position: absolute;
+    font-size: 40px;
+  }
+
+  .top {
+    top: 15px;
+    left: 20px;
+  }
+  .bottom {
+    bottom: 15px;
+    right: 20px;
+    transform: rotate(180deg);
+  }
+  .suit-hearts, .suit-diamonds {
+    color: red;
+  }
+  .suit-spades, .suit-clubs {
+    color: black;
+  }
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: rgb(253, 249, 22);
+    border-radius: 20px;
+    border: none;
+    cursor: default;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  button:hover {
+    background: #fdfdfd;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .h1{
+    padding: 30px 10px;
+    color: white; 
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+  }
